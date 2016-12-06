@@ -12,10 +12,8 @@ namespace TestAssignment.DB
         protected Repository<T> _repository { get; private set; }
 
         public DbProvider()
+            :this(null, null)
         {
-
-
-            _repository = RepositoryFactory<T>.CreateRepository(null, null);
         }
 
         public DbProvider(Action<object> creating, Action<object> created)

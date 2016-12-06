@@ -79,7 +79,7 @@ namespace TestAssignment.ViewModels
             get { return _connectionStringManager.NeedNewConnectionString(_connectionString) || _connectionFailed; }
         }
 
-        
+
 
         public MainPageViewModel()
         {
@@ -88,6 +88,8 @@ namespace TestAssignment.ViewModels
             _connectionString = _connectionStringManager.ReadConnectionString("ConnectionString");
 
             ValidateDelegate += Validate;
+
+            CheckProvider();
         }
 
         private List<string> Validate(string columnName, object o)
@@ -211,15 +213,20 @@ namespace TestAssignment.ViewModels
 
             _connectionStringManager.SaveConnectionString(_connectionString);
 
-            _dbConnectResultText = $"Database connected successful{Environment.NewLine}";
-            
+            CheckProvider();
+        }
+
+        private void CheckProvider()
+        {
             using (var provider = new DbProvider<DbMainContext>(Creating, Created))
             {
                 _connectionFailed = provider.ConnectionFailed;
                 if (_connectionFailed)
                     ShowConnectionFailedMessage();
-
+                else
+                    _dbConnectResultText = $"Database connected successful{Environment.NewLine}";
             }
+
             OnPropertyChanged(nameof(ResultText));
             OnPropertyChanged(nameof(NeedConnectionString));
         }

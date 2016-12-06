@@ -30,7 +30,7 @@ namespace TestAssignment.DB
                 }
                 catch (SqlException ex)
                 {
-                    return false;
+                    return ex.ClientConnectionId != Guid.Empty;
                 }
             }
         }

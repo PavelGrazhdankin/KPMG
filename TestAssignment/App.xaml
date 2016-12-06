@@ -1,0 +1,24 @@
+﻿<Application x:Class="TestAssignment.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:converters="clr-namespace:TestAssignment.Converters"
+             xmlns:local="clr-namespace:TestAssignment"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <ResourceDictionary>
+
+            <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+            <converters:BooleanNegationConverter x:Key="BooleanNegationConverter" />
+            <converters:BooleanToNegationVisibilityConverter x:Key="BooleanToNegationVisibilityConverter" />
+
+            <ResourceDictionary.MergedDictionaries>
+
+                <ResourceDictionary Source="pack://application:,,,/Styles/CommonStyles.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Styles/ValidationErrorStyle.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Styles/DataGridStyles.xaml" />
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

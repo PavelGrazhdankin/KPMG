@@ -1,0 +1,15 @@
+D:\Assignments\TestAssignment\TestAssignment\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+D:\Assignments\TestAssignment\TestAssignment\UnitTests\bin\Debug\UnitTests.dll
+D:\Assignments\TestAssignment\TestAssignment\UnitTests\bin\Debug\UnitTests.pdb
+D:\Assignments\TestAssignment\TestAssignment\UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Assignments\TestAssignment\TestAssignment\UnitTests\bin\Debug\NSubstitute.dll
+D:\Assignments\TestAssignment\TestAssignment\UnitTests\bin\Debug\nunit.framework.dll
+D:\Assignments\TestAssignment\TestAssignment\UnitTests\bin\Debug\TestAssignment.exe
+D:\Assignments\TestAssignment\TestAssignment\UnitTests\bin\Debug\EntityFramework.dll
+D:\Assignments\TestAssignment\TestAssignment\UnitTests\bin\Debug\TestAssignment.pdb
+D:\Assignments\TestAssignment\TestAssignment\UnitTests\bin\Debug\NSubstitute.xml
+D:\Assignments\TestAssignment\TestAssignment\UnitTests\bin\Debug\nunit.framework.xml
+D:\Assignments\TestAssignment\TestAssignment\UnitTests\bin\Debug\EntityFramework.xml
+D:\Assignments\TestAssignment\TestAssignment\UnitTests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\Assignments\TestAssignment\TestAssignment\UnitTests\obj\Debug\UnitTests.dll
+D:\Assignments\TestAssignment\TestAssignment\UnitTests\obj\Debug\UnitTests.pdb
